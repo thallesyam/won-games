@@ -6,7 +6,7 @@ exports[`<Main /> should render the heading 1`] = `
   "baseElement": <body>
     <div>
       <main
-        class="sc-beyTiQ fZqAbP"
+        class="sc-beyTiQ ehibYe"
       >
         <h1>
           React
@@ -16,7 +16,7 @@ exports[`<Main /> should render the heading 1`] = `
   </body>,
   "container": <div>
     <main
-      class="sc-beyTiQ fZqAbP"
+      class="sc-beyTiQ ehibYe"
     >
       <h1>
         React
