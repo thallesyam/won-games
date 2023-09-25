@@ -5,7 +5,9 @@ exports[`<Main /> should render the heading 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <main>
+      <main
+        class="sc-beyTiQ fZqAbP"
+      >
         <h1>
           React
         </h1>
@@ -13,7 +15,9 @@ exports[`<Main /> should render the heading 1`] = `
     </div>
   </body>,
   "container": <div>
-    <main>
+    <main
+      class="sc-beyTiQ fZqAbP"
+    >
       <h1>
         React
       </h1>
