@@ -1,13 +1,9 @@
-import { render, screen } from '@testing-library/react'
-
+import { Story, Meta } from '@storybook/react'
 import {{pascalCase name}} from '.'
 
-describe('<{{pascalCase name}} />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<{{pascalCase name}} />)
+export default {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}}
+} as Meta
 
-    expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
-  })
-})
+export const Default: Story = () => <{{pascalCase name}} />
