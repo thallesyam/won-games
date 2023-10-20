@@ -4,7 +4,6 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@next/babel-plugin-font",
     [
       "babel-plugin-styled-components",
       {
