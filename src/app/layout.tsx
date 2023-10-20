@@ -3,7 +3,7 @@ import { Poppins } from 'next/font/google'
 import StyledComponentsRegistry from '@/app/lib/registry'
 import { Providers } from '@/app/providers'
 
-const poppins = Poppins({ weight: ['600', '400', '300'], subsets: ["latin"] })
+const poppins = Poppins({ weight: ['600', '400', '300'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
