@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import 'jest-styled-components'
 
-import { renderWithTheme } from '@/utils/tests/helper'
+import { renderWithTheme } from 'utils/tests/helper'
 import Heading from '.'
 
 describe('<Heading />', () => {

@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import { Main } from '.'
-import { renderWithTheme } from '@/utils/tests/helper'
+import { renderWithTheme } from 'utils/tests/helper'
 
 describe('<Main />', () => {
   it('should render the heading', () => {

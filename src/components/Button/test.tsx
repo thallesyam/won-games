@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 
 import Button from '.'
-import { renderWithTheme } from '@/utils/tests/helper'
+import { renderWithTheme } from 'utils/tests/helper'
 import { AddShoppingCart } from 'styled-icons/material-outlined'
 
 describe('<Button />', () => {

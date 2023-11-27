@@ -4,20 +4,19 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
-    '!src/app/**',
-    '!src/lib/registry.tsx',
-    '!src/types/**',
     '!src/**/stories.tsx',
-    '!src/styles/**'
+    '!src/pages/**/*.tsx',
+    '!src/styles/**/*.ts',
+    '!src/utils/apollo.ts',
+    '!src/utils/apolloCache.ts',
+    '!src/types/**/*.d.ts',
+    '!src/graphql/**/*.ts',
+    '!src/**/mock.ts'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  modulePaths: ['<rootDir>/src/'],
-  transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
-  },
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   moduleNameMapper: {
     '^styled-components':
-      'styled-components/dist/styled-components.browser.cjs.js',
-    '^@/(.*)$': '<rootDir>/src/$1'
+      '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
   }
 }
