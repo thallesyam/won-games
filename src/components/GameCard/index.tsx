@@ -30,7 +30,7 @@ const GameCard = ({
   ribbon,
   ribbonColor = 'primary',
   ribbonSize = 'small',
-  onFav = () => {}
+  onFav
 }: GameCardProps) => (
   <S.Wrapper>
     {!!ribbon && (
