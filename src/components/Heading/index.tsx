@@ -15,7 +15,7 @@ export type HeadingProps = {
 const Heading = ({
   children,
   size = 'medium',
-  color = 'black',
+  color = 'white',
   lineColor = 'primary',
   lineLeft = false,
   lineBottom = false

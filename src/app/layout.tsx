@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
 import StyledComponentsRegistry from 'app/lib/registry'
 import { Providers } from 'app/providers'
-
-const poppins = Poppins({ weight: ['600', '400', '300'], subsets: ['latin'] })
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <Head>
+        <title>Won Games</title>
+        <link rel="shortcut icon" href="/img/logo.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+      </Head>
+
+      <body>
         <StyledComponentsRegistry>
           <Providers>{children}</Providers>
         </StyledComponentsRegistry>
